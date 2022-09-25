@@ -43,3 +43,5 @@ SELECT Album.title, Artist.name FROM Album JOIN Artist ON Album.artist_id = Arti
 SELECT Track.title, Genre.name FROM Track JOIN Genre ON Track.genre_id = Genre.id
 SELECT Track.title, Artist.name, Album.title, Genre.name FROM Track JOIN Artist JOIN Album JOIN Genre ON \
 Track.album_id = Album.id AND Album.artist_id = Artist.id AND Track.genre_id = Genre.id
+
+
