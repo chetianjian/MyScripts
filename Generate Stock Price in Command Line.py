@@ -10,7 +10,7 @@ def get_price(code=None, name=None, frequency=6, source="em"):
     frequency: int object, the frequency of requesting data, default for 6 seconds.
     sourse: "em" or "tx", default for "em", request data from eastmoney or tencent.
     """
-    if not (code and name):
+    if not (code or name):
         code = input("Please enter a single code number:")
     if code:
         while True:
